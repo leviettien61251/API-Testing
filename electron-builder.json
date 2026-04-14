@@ -1,0 +1,16 @@
+{
+  "appId": "com.detai6.api-testing",
+  "files": ["dist-electron", "dist-react"],
+  "extraResources": ["dist-electron/preload.cjs", "src/assets/**"],
+  "icon": "./public/desktopIcon256x256.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}
